@@ -28,7 +28,12 @@ return {
     vim.g.rainbow_delimiters = { highlight = highlight }
     hooks.register(hooks.type.SCOPE_HIGHLIGHT, hooks.builtin.scope_highlight_from_extmark)
 
+<<<<<<< HEAD
     -- vim.opt.list = true
+=======
+    vim.opt.list = true
+    local hooks = require 'ibl.hooks'
+>>>>>>> bdfc459 (Added custom plugins, helm, removed wrap)
     hooks.register(hooks.type.WHITESPACE, hooks.builtin.hide_first_space_indent_level)
     require('ibl').setup {
       whitespace = { highlight = { 'Whitespace', 'NonText' } },
